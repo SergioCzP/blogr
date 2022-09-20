@@ -1,0 +1,28 @@
+// Fonts
+$headingFont: "Overpass", sans-serif;
+$contentFont: "Ubuntu", sans-serif;
+
+// Media Queries
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extraLarge: 1200px;
+$maxLarge: 1440px;
+
+// Colors
+
+// CTA text
+$lightRed: hsl(356, 100%, 66%);
+// CTA hover background
+$veryLightRed: hsl(355, 100%, 74%);
+// Headings
+$veryDarkBlue: hsl(208, 49%, 24%);
+
+// Text
+$white: hsl(0, 0%, 100%);
+// Footer text
+$grayishBlue: hsl(240, 2%, 79%);
+// Body copy
+$veryDarkGrayishBlue: hsl(207, 13%, 34%);
+// Footer background
+$veryDarkBlackBlue: hsl(240, 10%, 16%);

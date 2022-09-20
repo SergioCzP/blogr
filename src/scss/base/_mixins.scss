@@ -1,0 +1,68 @@
+@use "variables" as v;
+
+/** Media Queries **/
+@mixin small {
+  @media (min-width: v.$small) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (min-width: v.$medium) {
+    @content;
+  }
+}
+@mixin large {
+  @media (min-width: v.$large) {
+    @content;
+  }
+}
+@mixin extraLarge {
+  @media (min-width: v.$extraLarge) {
+    @content;
+  }
+}
+@mixin maxLarge {
+  @media (min-width: v.$maxLarge) {
+    @content;
+  }
+}
+
+@mixin bgIntro {
+  background: rgb(255, 143, 112);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 143, 112, 1) 0%,
+    rgba(255, 61, 83, 1) 100%
+  );
+}
+
+@mixin bgBody {
+  background: rgb(44, 45, 62);
+  background: linear-gradient(
+    90deg,
+    rgba(44, 45, 62, 1) 0%,
+    rgba(62, 64, 100, 1) 100%
+  );
+}
+
+@mixin boton($bgColor, $colorTexto) {
+  background-color: $bgColor;
+  padding: 1.5rem 4rem;
+  color: $colorTexto;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  text-align: center;
+
+  @include tablet {
+    width: auto;
+  }
+  &:hover {
+    background-color: darken($bgColor, 10%);
+  }
+}

@@ -1,0 +1,47 @@
+@use "variables" as v;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: v.$contentFont;
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: v.$headingFont;
+  color: v.$veryDarkBlue;
+}
+
+p {
+  font-family: v.$contentFont;
+  color: v.$veryDarkGrayishBlue;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  line-height: 1;
+  padding: 0;
+  border: solid 0.1rem black;
+  border: none;
+
+  cursor: pointer;
+}
