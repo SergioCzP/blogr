@@ -45,6 +45,15 @@
   );
 }
 
+@mixin bgBodyMb {
+  background: rgb(44, 45, 62);
+  background: linear-gradient(
+    180deg,
+    rgba(44, 45, 62, 1) 0%,
+    rgba(62, 64, 100, 1) 100%
+  );
+}
+
 @mixin boton($bgColor, $colorTexto) {
   background-color: $bgColor;
   padding: 1.5rem 4rem;

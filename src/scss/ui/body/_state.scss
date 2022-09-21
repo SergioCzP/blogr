@@ -1,0 +1,64 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.state {
+  position: relative;
+  padding: 5rem 0 6rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    @include m.bgBodyMb;
+    top: 20rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0 10rem 0 10rem;
+  }
+
+  &__grid {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/bg-pattern-circles.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center -25rem;
+      top: 15rem;
+      left: 0;
+      right: 0;
+      bottom: -6rem;
+      border-radius: 0 10rem 0;
+    }
+  }
+
+  &__image {
+    position: relative;
+    height: 35rem;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &__content {
+    position: relative;
+    padding: 5rem 3rem 6rem;
+  }
+
+  &__heading,
+  &__text {
+    text-align: center;
+    line-height: 1.5;
+    color: v.$white;
+  }
+
+  &__heading {
+    font-size: 3.4rem;
+    margin: 0 0 3.5rem;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}
