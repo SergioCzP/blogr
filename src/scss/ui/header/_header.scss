@@ -108,6 +108,7 @@
   height: 0;
   pointer-events: none;
   overflow: hidden;
+  box-shadow: 2px 0px 12px -2px rgba(0, 0, 0, 0.5);
   transition: all 500ms ease;
 
   @include m.medium {
