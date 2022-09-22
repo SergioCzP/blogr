@@ -6,17 +6,20 @@
   border-radius: 0 0 0 7.5rem;
   max-width: 144rem;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 
   &::before {
     content: "";
     position: absolute;
     background-image: url("../img/bg-pattern-intro-mobile.svg");
     background-repeat: no-repeat;
-    top: -30rem;
-    left: -30rem;
+    background-position: -32.5rem -32.5rem;
+    // background-size: contain;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
+    border-radius: 0 0 0 7.5rem;
   }
 
   &__container {
@@ -29,6 +32,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   &__logo {
@@ -94,6 +98,8 @@
 }
 
 .menu {
+  position: absolute;
+  top: 0;
   width: 100%;
   margin-top: 5rem;
   background-color: v.$white;
