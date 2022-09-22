@@ -2,6 +2,7 @@ const hamburgerBtn = document.querySelector(".header__button");
 const imgBtn = document.querySelector(".header__icon");
 const menuBoxes = document.querySelector(".menu__boxes");
 const mainMenu = document.querySelector(".menu");
+const arrows = document.querySelectorAll(".menu__arrow");
 
 // Functions
 const rotateArrow = function (arrow) {
@@ -18,6 +19,20 @@ const changeImgBtn = function () {
     ? "build/img/icon-close.svg"
     : "build/img/icon-hamburger.svg";
 };
+
+const pathArrow = function () {
+  return window.screen.width < 768
+    ? "build/img/icon-arrow-dark.svg"
+    : "build/img/icon-arrow-light.svg";
+};
+
+const loadArrow = function () {
+  let path = pathArrow();
+  arrows.forEach((arrow) => {
+    arrow.src = path;
+  });
+};
+loadArrow();
 
 // Event listeners
 hamburgerBtn.addEventListener("click", function (e) {

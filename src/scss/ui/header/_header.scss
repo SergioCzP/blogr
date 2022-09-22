@@ -20,11 +20,20 @@
     right: 0;
     bottom: 0;
     border-radius: 0 0 0 7.5rem;
+
+    @include m.medium {
+      background-image: url("../img/bg-pattern-intro-desktop.svg");
+      background-position: -100rem -125rem;
+    }
   }
 
   &__container {
     position: relative;
     padding: 5.5rem 2.5rem 15.5rem;
+
+    @include m.medium {
+      padding: 6rem 2.5rem 15rem;
+    }
   }
 
   &__navegation {
@@ -33,12 +42,23 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+
+    @include m.medium {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      gap: 2.5rem;
+    }
   }
 
   &__logo {
     height: 3rem;
     width: 8.5rem;
     object-fit: contain;
+
+    @include m.medium {
+      height: 5rem;
+      width: 10rem;
+    }
   }
 
   &__button {
@@ -57,12 +77,20 @@
 
   &__content {
     padding: 5rem 1.5rem 0;
+
+    @include m.medium {
+      padding: 14rem 6rem 0;
+    }
   }
 
   &__heading {
     color: v.$white;
     text-align: center;
     margin: 0;
+
+    @include m.medium {
+      font-size: 4.4rem;
+    }
   }
 
   &__text {
@@ -76,6 +104,10 @@
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+
+    @include m.medium {
+      gap: 2rem;
+    }
   }
 
   &__link {
@@ -85,14 +117,42 @@
     font-weight: 700;
     margin-top: 2.5rem;
 
+    @include m.medium {
+      margin-top: 2rem;
+    }
+
     &:first-of-type {
       color: v.$lightRed;
       background-color: v.$white;
+
+      @include m.medium {
+        transition: color 350ms ease, background-color 350ms ease,
+          border-color 350ms ease;
+      }
+      &:hover {
+        @include m.medium {
+          color: v.$white;
+          background-color: v.$lightRed;
+          border-color: v.$lightRed;
+        }
+      }
     }
 
     &:last-of-type {
       color: v.$white;
       background-color: transparent;
+
+      @include m.medium {
+        padding: 1.5rem 2.5rem;
+        transition: color 350ms ease, background-color 350ms ease;
+      }
+
+      &:hover {
+        @include m.medium {
+          background-color: v.$white;
+          color: v.$lightRed;
+        }
+      }
     }
   }
 }
@@ -112,13 +172,35 @@
   transition: all 500ms ease;
 
   @include m.medium {
-    width: auto;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: unset;
+    pointer-events: auto;
+    margin: 0;
+    background-color: transparent;
+    box-shadow: none;
+    overflow: visible;
   }
 
   &__boxes {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    @include m.medium {
+      flex-direction: row;
+      gap: 3rem;
+    }
+  }
+
+  &__box {
+    @include m.medium {
+      position: relative;
+    }
   }
 
   &__box,
@@ -135,6 +217,15 @@
     padding: 0 1rem 2rem;
     color: v.$veryDarkBlue;
     font-weight: 500;
+
+    @include m.medium {
+      color: v.$white;
+      padding: 0;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__arrow {
@@ -155,11 +246,28 @@
     transition: all 350ms ease;
 
     background-color: lighten(v.$grayishBlue, 15);
+
+    @include m.medium {
+      position: absolute;
+      align-items: flex-start;
+      gap: 2rem;
+      width: 11rem;
+      top: 3rem;
+    }
   }
 
   &__link {
     color: v.$veryDarkGrayishBlue;
     font-weight: 500;
+
+    @include m.medium {
+      font-weight: lighter;
+      transition: font-weight 300ms ease;
+    }
+
+    &:hover {
+      font-weight: bolder;
+    }
   }
 
   &__subscribe {
@@ -171,11 +279,28 @@
     padding: 1.5rem 0 0;
 
     border-top: solid 0.1rem v.$grayishBlue;
+
+    @include m.medium {
+      flex-direction: row;
+      gap: 3rem;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   &__register {
     &:first-of-type {
       padding: 1.5rem 0;
+
+      @include m.medium {
+        color: v.$white;
+
+        &:hover {
+          font-weight: unset;
+          text-decoration: underline;
+        }
+      }
     }
 
     &:last-of-type {
@@ -183,6 +308,19 @@
       @include m.bgIntro;
       padding: 1.5rem 4rem;
       border-radius: 10rem;
+
+      @include m.medium {
+        color: v.$lightRed;
+        background: none;
+        background-color: v.$white;
+        font-weight: bolder;
+        transition: color 350ms ease, background-color 350ms ease;
+
+        &:hover {
+          color: v.$white;
+          background-color: v.$lightRed;
+        }
+      }
     }
   }
 }
@@ -199,6 +337,10 @@
   height: auto;
   padding: 2.5rem 0;
   pointer-events: auto;
+
+  @include m.medium {
+    padding: 3.5rem 0.75rem;
+  }
 }
 
 .up-arrow {
