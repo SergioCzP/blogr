@@ -14,10 +14,21 @@
     right: 0;
     bottom: 0;
     border-radius: 0 10rem 0 10rem;
+
+    @include m.medium {
+      top: 10rem;
+      bottom: 12.5rem;
+    }
   }
 
   &__grid {
     position: relative;
+
+    @include m.medium {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
 
     &::before {
       content: "";
@@ -31,6 +42,14 @@
       right: 0;
       bottom: -6rem;
       border-radius: 0 10rem 0;
+
+      @include m.medium {
+        background-position: -18rem -26rem;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        bottom: 6.5rem;
+      }
     }
   }
 
@@ -39,6 +58,11 @@
     height: 35rem;
     width: 100%;
     object-fit: contain;
+
+    @include m.medium {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__content {
@@ -56,9 +80,20 @@
   &__heading {
     font-size: 3.4rem;
     margin: 0 0 3.5rem;
+
+    @include m.medium {
+      text-align: left;
+      padding: 2.5rem 0 0;
+      margin: 0;
+    }
   }
 
   &__text {
     margin: 0;
+
+    @include m.medium {
+      padding: 2.5rem 0;
+      text-align: left;
+    }
   }
 }
