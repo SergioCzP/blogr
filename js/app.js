@@ -21,7 +21,7 @@ const changeImgBtn = function () {
 };
 
 const pathArrow = function () {
-  return window.screen.width < 768
+  return window.innerWidth < 768
     ? "build/img/icon-arrow-dark.svg"
     : "build/img/icon-arrow-light.svg";
 };
@@ -53,3 +53,6 @@ menuBoxes.addEventListener("click", function (e) {
     displaySubMenu(btnSubMenu);
   }
 });
+
+// Resize
+window.onresize = loadArrow;
