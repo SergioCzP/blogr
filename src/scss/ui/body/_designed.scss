@@ -32,6 +32,10 @@
       grid-template-columns: repeat(2, 1fr);
       margin-top: -10rem;
     }
+
+    @include m.large {
+      margin: 0;
+    }
   }
 
   &__content {
