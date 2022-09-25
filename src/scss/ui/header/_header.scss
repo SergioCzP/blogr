@@ -25,6 +25,10 @@
       background-image: url("../img/bg-pattern-intro-desktop.svg");
       background-position: -100rem -125rem;
     }
+
+    @include m.large {
+      background-position: -85rem -130rem;
+    }
   }
 
   &__container {
@@ -33,6 +37,10 @@
 
     @include m.medium {
       padding: 6rem 2.5rem 15rem;
+    }
+
+    @include m.large {
+      padding: 6rem 10rem 15rem;
     }
   }
 
@@ -47,6 +55,10 @@
       flex-wrap: nowrap;
       justify-content: flex-start;
       gap: 2.5rem;
+    }
+
+    @include m.large {
+      gap: 6.5rem;
     }
   }
 
@@ -119,6 +131,10 @@
 
     @include m.medium {
       margin-top: 2rem;
+    }
+
+    @include m.large {
+      margin-top: 2.5rem;
     }
 
     &:first-of-type {
