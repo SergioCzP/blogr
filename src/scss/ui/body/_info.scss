@@ -17,6 +17,11 @@
 
   &__content {
     padding: 0 2.5rem;
+
+    @include m.extraLarge {
+      padding-left: 3rem;
+      padding-right: 18rem;
+    }
   }
 
   &__heading,
@@ -65,6 +70,10 @@
     @include m.medium {
       object-fit: cover;
       object-position: right;
+    }
+
+    @include m.maxLarge {
+      object-position: -28.5rem;
     }
   }
 }
