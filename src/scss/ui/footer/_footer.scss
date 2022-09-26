@@ -50,6 +50,10 @@
 
   &__link {
     color: v.$grayishBlue;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__attribution {
