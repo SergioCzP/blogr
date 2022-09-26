@@ -20,6 +20,11 @@
       top: 10rem;
       bottom: 12.5rem;
     }
+
+    @include m.extraLarge {
+      bottom: 20rem;
+      top: 15rem;
+    }
   }
 
   &__grid {
@@ -56,6 +61,13 @@
         right: 10rem;
         background-position: -25rem -40rem;
       }
+
+      @include m.extraLarge {
+        top: 10rem;
+        right: 30rem;
+        bottom: 14rem;
+        background-position: -25rem -55rem;
+      }
     }
   }
 
@@ -74,6 +86,12 @@
   &__content {
     position: relative;
     padding: 5rem 3rem 6rem;
+
+    @include m.extraLarge {
+      padding: 5rem 0 6rem;
+      padding-right: 17rem;
+      padding-left: 6rem;
+    }
   }
 
   &__heading,
@@ -100,6 +118,10 @@
     @include m.medium {
       padding: 2.5rem 0;
       text-align: left;
+    }
+
+    @include m.extraLarge {
+      line-height: 1.5;
     }
   }
 }
