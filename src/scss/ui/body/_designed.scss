@@ -21,6 +21,10 @@
       font-size: 3.4rem;
       margin-top: 8rem 0;
     }
+
+    @include m.large {
+      margin: 8rem 0 -12rem;
+    }
   }
 
   &__grid {
@@ -33,6 +37,7 @@
       margin-top: -10rem;
     }
 
+    // Large
     @include m.large {
       margin: 0;
     }
@@ -46,6 +51,11 @@
       grid-row: auto;
       grid-column: 1 / 2;
     }
+
+    @include m.large {
+      padding: 0 10rem;
+      padding-right: 2.5rem;
+    }
   }
 
   &__title {
@@ -57,6 +67,18 @@
       text-align: left;
       margin: 9rem 0 3rem;
     }
+
+    &--mt-24 {
+      @include m.large {
+        margin: 24rem 0 3rem;
+      }
+    }
+
+    &--mt-8 {
+      @include m.large {
+        margin: 8rem 0 3rem;
+      }
+    }
   }
 
   &__text {
@@ -65,6 +87,12 @@
 
     @include m.medium {
       text-align: left;
+    }
+
+    &--mb-20 {
+      @include m.large {
+        margin-bottom: 20rem;
+      }
     }
   }
 
