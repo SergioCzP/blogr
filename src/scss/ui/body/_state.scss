@@ -16,6 +16,7 @@
     border-radius: 0 10rem 0 10rem;
 
     @include m.medium {
+      @include m.bgBody;
       top: 10rem;
       bottom: 12.5rem;
     }
@@ -49,6 +50,11 @@
         left: 0;
         right: 0;
         bottom: 6.5rem;
+      }
+
+      @include m.large {
+        right: 10rem;
+        background-position: -25rem -40rem;
       }
     }
   }
