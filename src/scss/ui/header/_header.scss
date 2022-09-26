@@ -29,6 +29,10 @@
     @include m.large {
       background-position: -85rem -130rem;
     }
+
+    @include m.extraLarge {
+      background-position: -68rem -133rem;
+    }
   }
 
   &__container {
@@ -41,6 +45,10 @@
 
     @include m.large {
       padding: 6rem 10rem 15rem;
+    }
+
+    @include m.extraLarge {
+      padding: 6rem 16rem 15rem;
     }
   }
 
@@ -93,6 +101,10 @@
     @include m.medium {
       padding: 14rem 6rem 0;
     }
+
+    @include m.extraLarge {
+      padding: 14rem 3rem 0;
+    }
   }
 
   &__heading {
@@ -103,6 +115,10 @@
     @include m.medium {
       font-size: 4.4rem;
     }
+
+    @include m.extraLarge {
+      font-size: 6rem;
+    }
   }
 
   &__text {
@@ -110,6 +126,10 @@
     color: v.$white;
     line-height: 1.5;
     margin: 2.5rem 0;
+
+    @include m.extraLarge {
+      font-size: 2rem;
+    }
   }
 
   &__information {
