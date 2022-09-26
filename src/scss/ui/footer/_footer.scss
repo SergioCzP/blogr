@@ -17,6 +17,9 @@
 
     @include m.medium {
       grid-template-columns: repeat(4, 1fr);
+
+      // Max-width 144rem
+      @include m.maxWidth;
     }
   }
 
@@ -61,6 +64,11 @@
     margin: 0 auto;
     padding: 5rem 2.5rem 0;
     color: v.$white;
+
+    @include m.medium {
+      // Max-width 144rem
+      @include m.maxWidth;
+    }
   }
 
   &__front,

@@ -54,6 +54,11 @@
   );
 }
 
+@mixin maxWidth {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
 @mixin boton($bgColor, $colorTexto) {
   background-color: $bgColor;
   padding: 1.5rem 4rem;

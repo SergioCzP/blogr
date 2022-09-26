@@ -8,6 +8,11 @@
   position: relative;
   // overflow: hidden;
 
+  @include m.medium {
+    // Max-width 144rem
+    @include m.maxWidth;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -32,6 +37,10 @@
 
     @include m.extraLarge {
       background-position: -68rem -133rem;
+    }
+
+    @include m.maxLarge {
+      background-position: -45rem -131rem;
     }
   }
 

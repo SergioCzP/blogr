@@ -6,6 +6,9 @@
 
   @include m.medium {
     padding: 8rem 0 0;
+
+    // Max-width 144rem
+    @include m.maxWidth;
   }
 
   &__heading,
@@ -94,6 +97,10 @@
       text-align: left;
     }
 
+    @include m.extraLarge {
+      line-height: 1.8;
+    }
+
     &--mb-20 {
       @include m.large {
         margin-bottom: 20rem;
@@ -110,6 +117,10 @@
       grid-column: 2 / 3;
       object-fit: cover;
       object-position: left 0rem;
+    }
+
+    @include m.maxLarge {
+      object-position: 6.5rem;
     }
   }
 }

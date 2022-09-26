@@ -5,6 +5,11 @@
   position: relative;
   padding: 5rem 0 6rem;
 
+  @include m.medium {
+    // Max-width 144rem
+    @include m.maxWidth;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -110,6 +115,10 @@
       padding: 2.5rem 0 0;
       margin: 0;
     }
+
+    @include m.maxLarge {
+      padding: 0;
+    }
   }
 
   &__text {
@@ -121,7 +130,7 @@
     }
 
     @include m.extraLarge {
-      line-height: 1.5;
+      line-height: 1.8;
     }
   }
 }

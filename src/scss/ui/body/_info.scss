@@ -6,6 +6,9 @@
 
   @include m.medium {
     padding: 0 0 12rem;
+
+    // Max-width 144rem
+    @include m.maxWidth;
   }
 
   &__grid {
@@ -55,6 +58,10 @@
 
     @include m.medium {
       text-align: left;
+    }
+
+    @include m.extraLarge {
+      line-height: 1.8;
     }
 
     &:nth-last-of-type() {
