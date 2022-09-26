@@ -31,6 +31,18 @@
     @include m.medium {
       text-align: left;
     }
+
+    &--mt-19 {
+      @include m.large {
+        margin: 19rem 0 3rem;
+      }
+    }
+
+    &--mt-8 {
+      @include m.large {
+        margin: 8rem 0 4rem;
+      }
+    }
   }
 
   &__text {
@@ -40,7 +52,7 @@
       text-align: left;
     }
 
-    &:last-of-type {
+    &:nth-last-of-type() {
       margin-bottom: 5rem;
     }
   }
@@ -54,5 +66,11 @@
       object-fit: cover;
       object-position: right;
     }
+  }
+}
+
+.info__text--mb-19 {
+  @include m.large {
+    margin-bottom: 19rem;
   }
 }
